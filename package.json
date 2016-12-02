@@ -1,8 +1,8 @@
 {
-  "description": "NativeScript Application",
-  "license": "SEE LICENSE IN <your-license-filename>",
-  "readme": "NativeScript Application",
-  "repository": "<fill-your-repository-here>",
+  "description": "A tool intended to handle the administration of MySQL over the mobile as native app for developers",
+  "license": "https://raw.githubusercontent.com/nodemyadmin/nodemyadmin-native/master/LICENSE",
+  "readme": "https://github.com/nodemyadmin/nodemyadmin-native/blob/master/README.md",
+  "repository": "https://github.com/nodemyadmin/nodemyadmin-native",
   "nativescript": {
     "id": "org.nativescript.nodemyadmin",
     "tns-android": {
