@@ -1,4 +1,5 @@
 import { Component } from "@angular/core";
+import { ActionBar } from "ui/action-bar";
 
 @Component({
     selector: "my-app",
@@ -14,7 +15,7 @@ export class AppComponent {
             return "Hoorraaay! \nYou are ready to start building!";
         }
     }
-    
+
     public onTap() {
         this.counter--;
     }
