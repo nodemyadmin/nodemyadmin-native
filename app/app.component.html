@@ -2,8 +2,18 @@
   title=" nodemyadmin"
   android.icon="res://icon" android.iconVisibility="always"></ActionBar>
 
-<StackLayout class="p-20">
-    <Label text="Tap the button" class="h1 text-center"></Label>
-    <Button text="TAP" (tap)="onTap()" class="btn btn-primary btn-active"></Button>
-    <Label [text]="message" class="h2 text-center" textWrap="true"></Label>
+<StackLayout>
+  <Image src="~/assets/images/nodemyadmin_logo.png"></Image>
+</StackLayout>
+
+<StackLayout>
+  <Label class="h2 text-center" text="Sign in to Nodemyadmin"></Label>
+  <TextField
+    hint="Username"
+    ></TextField>
+  <TextField
+    hint="Password"
+    secure="true"></TextField>
+  <Button text="Sign In" (tap)="onSignIn()" class="btn btn-primary btn-active"></Button>
+
 </StackLayout>

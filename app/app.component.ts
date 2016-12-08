@@ -1,5 +1,6 @@
 import { Component } from "@angular/core";
 import { ActionBar } from "ui/action-bar";
+import { TextField } from "ui/text-field";
 
 @Component({
     selector: "my-app",
