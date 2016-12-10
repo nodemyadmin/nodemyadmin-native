@@ -1,21 +1,2 @@
 <ActionBar title="Sign In to nodemyadmin"></ActionBar>
-
-<StackLayout #signInContainer class="signin-container">
-  <StackLayout #logoContainer class="logo-container">
-    <Image src="~/assets/logo/nma_logo_xxxhdpi.png"></Image>
-  </StackLayout>
-
-  <Label text="Username: "></Label>
-  <TextField
-    returnKeyType="next"
-    autocorrect="false"
-    ></TextField>
-
-  <Label text="Password: "></Label>
-  <TextField
-    returnKeyType="done"
-    (returnPress)="onSignIn()"
-    secure="true"></TextField>
-
-  <Button text="Sign In" (tap)="onSignIn()" class="btn btn-primary btn-active signin-action"></Button>
-</StackLayout>
+<page-router-outlet></page-router-outlet>
