@@ -13,10 +13,10 @@
   },
   "scripts": {
     "add:droid": "tns platform add android",
+    "remove:droid": "tns platform remove android",
     "start:droid": "tns run android --emulator",
     "start:live:droid": "tns livesync android --emulator --watch",
     "clean:droid": "rimraf ./platforms/android",
-    "remove:droid": "tns platform remove android",
     "update:droid": "tns platform update android",
     "lint:all": "npm run lint:web && npm run lint:droid",
     "lint:droid": "tslint -c tslint.json 'app/**/*.ts'",
