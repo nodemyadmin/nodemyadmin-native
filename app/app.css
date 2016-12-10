@@ -19,13 +19,25 @@ refer to http://docs.nativescript.org/ui/theme.
 */
 @import 'nativescript-theme-core/css/core.light.css';
 
-.signin-container {
+.logo-container {
   margin-top: 20px;
-  margin-left: 15px;
-  margin-right: 15px;
-  padding: 15px;
+  margin-bottom: 60px;
+  width: 40%;
+}
+
+.signin-container {
+  padding: 20px;
+  background-color: #1B4F72;
+}
+
+.signin-container .signin-action {
+  margin: 0px;
 }
 
 .signin-container Label {
-  font-size: 20;
+  font-size: 20px;
+}
+
+.signin-container TextField, .signin-container Label {
+  color: #ffffff;
 }
