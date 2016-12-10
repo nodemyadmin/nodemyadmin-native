@@ -1,22 +1,19 @@
-import { Component } from "@angular/core";
+import { Component, ElementRef, ViewChild, OnInit } from "@angular/core";
+import { TextField } from "ui/text-field";
 import { ActionBar } from "ui/action-bar";
 
 @Component({
-    selector: "my-app",
-    templateUrl: "app.component.html",
+  selector: "my-app",
+  templateUrl: "app.component.html"
 })
-export class AppComponent {
-    public counter: number = 16;
+export class AppComponent implements OnInit {
+  @ViewChild("signInContainer") signInContainer: ElementRef;
+  @ViewChild("logoContainer") logoContainer: ElementRef;
 
-    public get message(): string {
-        if (this.counter > 0) {
-            return this.counter + " taps left";
-        } else {
-            return "Hoorraaay! \nYou are ready to start building!";
-        }
-    }
+  ngOnInit() { }
 
-    public onTap() {
-        this.counter--;
-    }
+  onSignIn() {
+    console.log('Sign In');
+  }
+
 }
