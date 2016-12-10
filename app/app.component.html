@@ -1,19 +1,23 @@
-<ActionBar
-  title=" nodemyadmin"
-  android.icon="res://icon" android.iconVisibility="always"></ActionBar>
+<ActionBar title="Sign In to nodemyadmin"></ActionBar>
 
-<StackLayout>
-  <Image src="~/assets/images/nodemyadmin_logo.png"></Image>
+<StackLayout #logoContainer>
+  <Image
+    src = "~/assets/logo/nma_logo_hdpi.png"
+    stretch = "none"
+    class = "nma-logo" horizontalAlignment="center"></Image>
 </StackLayout>
 
-<StackLayout>
-  <Label class="h2 text-center" text="Sign in to Nodemyadmin"></Label>
+<StackLayout #signInContainer class="signin-container">
+  <Label text="Username: "></Label>
   <TextField
-    hint="Username"
+    returnKeyType="next"
     ></TextField>
-  <TextField
-    hint="Password"
-    secure="true"></TextField>
-  <Button text="Sign In" (tap)="onSignIn()" class="btn btn-primary btn-active"></Button>
 
+  <Label text="Password: "></Label>
+  <TextField
+    returnKeyType="done"
+    (returnPress)="onSignIn()"
+    secure="true"></TextField>
+
+  <Button text="Sign In" (tap)="onSignIn()" class="btn btn-primary btn-active"></Button>
 </StackLayout>
