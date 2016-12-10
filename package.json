@@ -15,7 +15,7 @@
     "add:droid": "tns platform add android",
     "start:droid": "tns run android --emulator",
     "start:live:droid": "tns livesync android --emulator --watch",
-    "clean:platform:droid": "rimraf ./platforms/android",
+    "clean:droid": "rimraf ./platforms/android",
     "remove:droid": "tns platform remove android",
     "update:droid": "tns platform update android",
     "lint:all": "npm run lint:web && npm run lint:droid",
@@ -49,6 +49,7 @@
     "lazy": "1.0.11",
     "nativescript-dev-android-snapshot": "^0.*.*",
     "nativescript-dev-typescript": "^0.3.2",
+    "rimraf": "^2.5.4",
     "tslint": "^4.0.2",
     "typescript": "^2.0.10",
     "zone.js": "~0.6.21"
