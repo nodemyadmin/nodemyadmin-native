@@ -18,26 +18,3 @@ of writing your own CSS rules. For a full list of class names in the theme
 refer to http://docs.nativescript.org/ui/theme.
 */
 @import 'nativescript-theme-core/css/core.light.css';
-
-.logo-container {
-  margin-top: 20px;
-  margin-bottom: 60px;
-  width: 40%;
-}
-
-.signin-container {
-  padding: 20px;
-  background-color: #1B4F72;
-}
-
-.signin-container .signin-action {
-  margin: 0px;
-}
-
-.signin-container Label {
-  font-size: 20px;
-}
-
-.signin-container TextField, .signin-container Label {
-  color: #ffffff;
-}
